@@ -1,0 +1,69 @@
+@import '../../../src/variables.scss';
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1240px;
+    margin: auto;
+    padding-top: 5dvh;
+
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        gap: 3dvh;
+        list-style-type: none;
+
+        a {
+            transition: color 1s;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: $green;
+        }
+    }
+
+    .nav-icons {
+        display: flex;
+        gap: 3dvh;
+
+        i {
+            transition: color 1s;
+        }
+
+        i:hover {
+            color: $green;
+        }
+    }
+}
+
+#carouselExampleCaptions {
+    position: relative;
+
+    img {
+        filter: brightness(40%);
+    }
+
+    .carousel-caption {
+        position: absolute;
+        top: 40%;
+
+        h5 {
+            font-family: 'Roboto', serif;
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+
+        .carousel-btn {
+            background-color: transparent;
+            border: none;
+            width: 30dvh;
+            height: 5dvh;
+            transition: border 1s;
+        }
+
+        .carousel-btn:hover {
+            border: 2px solid $gold;
+        }
+    }
+}

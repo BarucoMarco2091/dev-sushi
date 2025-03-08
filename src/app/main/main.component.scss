@@ -1,0 +1,221 @@
+@import '../../../src/variables.scss';
+
+main {
+
+    .about {
+        display: flex;
+        flex-direction: row;
+        max-width: 1240px;
+        margin: auto;
+        padding-top: 10dvh;
+
+        div {
+            flex: 1;
+        }
+
+        .text {
+            margin-right: 5dvh;
+
+            h1 {
+                text-align: center;
+                margin-bottom: 5dvh;
+            }
+
+            p {
+                line-height: 2rem;
+            }
+        }
+
+        img {
+            filter: brightness(40%);
+            border-radius: 1dvh;
+            transition: transform 1s;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .menu {
+        max-width: 1240px;
+        margin: auto;
+
+        h2 {
+            text-align: center;
+            margin-top: 10dvh;
+            margin-bottom: 5dvh;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(1fr);
+            gap: 3dvh;
+
+            div {
+                flex: 1;
+            }
+
+            .card {
+                display: flex;
+                flex-direction: row;
+                border-radius: 2dvh;
+                box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+                overflow: hidden;
+
+                .card-img {
+                    img {
+                        width: 100%;
+                        height: 40dvh;
+                        object-fit: cover;
+                        transition: transform 1s;
+                        filter: brightness(50%);
+                    }
+
+                    img:hover {
+                        transform: scale(1.1);
+                    }
+                }
+
+                .card-text {
+                    margin-left: 3dvh;
+
+                    span {
+                        color: $red;
+                        font-family: 'Poppins', serif;
+                        font-weight: 600;
+                        font-size: 1.3rem;
+                        margin-top: 3dvh;
+                        text-align: center;
+                    }
+
+                    .card-description {
+                        color: $black;
+                        padding-top: 5dvh;
+                    }
+
+                    .card-info {
+                        display: flex;
+                        justify-content: space-between;
+                        padding-top: 3dvh;
+
+                        .card-price {
+                            color: $red;
+                            font-weight: 500;
+                        }
+
+                        .add-to-cart-btn {
+                            margin-right: 2dvh;
+                            width: 7dvh;
+                            height: 7dvh;
+                            background-color: $black;
+                            border: none;
+                            border-radius: 1dvh;
+                            transition: background-color 1s;
+                        }
+
+                        .add-to-cart-btn:hover {
+                            background-color: $gold;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media (width >=768px) {
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .menu-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 4dvh;
+
+            .menu-btn {
+                background-color: $green;
+                border: none;
+                height: 5dvh;
+                width: 32dvh;
+                border-radius: 2dvh;
+                transition: color 1s;
+            }
+
+            .menu-btn:hover {
+                color: $primaryGreen;
+            }
+        }
+    }
+
+    .location {
+        display: flex;
+        flex-direction: column;
+        max-width: 1240px;
+        margin: auto;
+
+        h2 {
+            text-align: center;
+            margin-top: 5dvh;
+            margin-bottom: 5dvh;
+        }
+    }
+
+    .testimonials {
+        max-width: 1240px;
+        margin: auto;
+
+        h2 {
+            text-align: center;
+            margin: 10dvh 5dvh;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(1fr);
+            gap: 3dvh;
+
+            .card {
+                display: flex;
+                border-radius: 2dvh;
+                box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 50dvh;
+                    object-fit: cover;
+                    transition: transform 1s;
+                    filter: brightness(50%);
+                }
+
+                img:hover {
+                    transform: scale(1.1);
+                }
+
+                .card-testimonials {
+                    color: $black;
+                    text-align: center;
+                    padding: 2dvh 2dvh;
+                    line-height: 2rem;
+                }
+
+                .card-name {
+                    color: $black;
+                    text-align: center;
+                    padding: 2dvh 2dvh;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        @media (width >=768px) {
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    }
+}

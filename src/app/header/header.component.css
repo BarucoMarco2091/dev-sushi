@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1240px;
+  margin: auto;
+  padding-top: 5dvh;
+}
+nav .nav-list {
+  display: flex;
+  flex-direction: row;
+  gap: 3dvh;
+  list-style-type: none;
+}
+nav .nav-list a {
+  transition: color 1s;
+  text-decoration: none;
+}
+nav .nav-list a:hover {
+  color: rgb(25, 148, 25);
+}
+nav .nav-icons {
+  display: flex;
+  gap: 3dvh;
+}
+nav .nav-icons i {
+  transition: color 1s;
+}
+nav .nav-icons i:hover {
+  color: rgb(25, 148, 25);
+}
+
+#carouselExampleCaptions {
+  position: relative;
+}
+#carouselExampleCaptions img {
+  filter: brightness(40%);
+}
+#carouselExampleCaptions .carousel-caption {
+  position: absolute;
+  top: 40%;
+}
+#carouselExampleCaptions .carousel-caption h5 {
+  font-family: "Roboto", serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+#carouselExampleCaptions .carousel-caption .carousel-btn {
+  background-color: transparent;
+  border: none;
+  width: 30dvh;
+  height: 5dvh;
+  transition: border 1s;
+}
+#carouselExampleCaptions .carousel-caption .carousel-btn:hover {
+  border: 2px solid rgb(209, 184, 44);
+}/*# sourceMappingURL=header.component.css.map */
