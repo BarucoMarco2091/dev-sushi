@@ -1,0 +1,28 @@
+@import '../../../src/variables.scss';
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1240px;
+    margin: auto;
+    padding-top: 5dvh;
+
+    .footer-icons {
+        display: flex;
+        gap: 3dvh;
+
+        i {
+            transition: color 1s;
+        }
+
+        i:hover {
+            color: $green;
+        }
+    }
+}
+
+@media (width <= 768px) {
+    footer {
+        padding: 1dvh 1dvh;
+    }
+}

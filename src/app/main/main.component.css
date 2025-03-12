@@ -28,6 +28,13 @@ main .about img {
 main .about img:hover {
   transform: scale(1.1);
 }
+@media (width <= 768px) {
+  main .about {
+    display: flex;
+    flex-direction: column;
+    padding: 1dvh 1dvh;
+  }
+}
 main .menu {
   max-width: 1240px;
   margin: auto;
@@ -41,13 +48,14 @@ main .menu .grid-container {
   display: grid;
   grid-template-columns: repeat(1fr);
   gap: 3dvh;
+  padding: 1dvh 1dvh;
 }
 main .menu .grid-container div {
   flex: 1;
 }
 main .menu .grid-container .card {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   border-radius: 2dvh;
   box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
   overflow: hidden;
@@ -59,12 +67,14 @@ main .menu .grid-container .card .card-img img {
      object-fit: cover;
   transition: transform 1s;
   filter: brightness(50%);
+  padding-bottom: 3dvh;
 }
 main .menu .grid-container .card .card-img img:hover {
   transform: scale(1.1);
 }
 main .menu .grid-container .card .card-text {
   margin-left: 3dvh;
+  text-align: center;
 }
 main .menu .grid-container .card .card-text span {
   color: rgb(226, 48, 48);
@@ -99,10 +109,22 @@ main .menu .grid-container .card .card-text .card-info .add-to-cart-btn {
 main .menu .grid-container .card .card-text .card-info .add-to-cart-btn:hover {
   background-color: rgb(209, 184, 44);
 }
-@media (width >= 768px) {
+@media (width >= 1024px) {
   main .menu .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    padding: 1dvh 1dvh !important;
+  }
+  main .menu .grid-container .card {
+    display: flex;
+    flex-direction: row !important;
+  }
+  main .menu .grid-container .card .card-img img {
+    width: 100%;
+    height: 50dvh !important;
+    -o-object-fit: cover !important;
+       object-fit: cover !important;
+    padding-bottom: 0;
   }
 }
 main .menu .menu-button {
@@ -145,9 +167,11 @@ main .testimonials .grid {
   display: grid;
   grid-template-columns: repeat(1fr);
   gap: 3dvh;
+  padding: 1dvh 1dvh;
 }
 main .testimonials .grid .card {
   display: flex;
+  flex-direction: column;
   border-radius: 2dvh;
   box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
   overflow: hidden;
@@ -175,7 +199,7 @@ main .testimonials .grid .card .card-name {
   padding: 2dvh 2dvh;
   font-weight: 500;
 }
-@media (width >= 768px) {
+@media (width >= 1024px) {
   main .testimonials .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

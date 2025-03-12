@@ -1,7 +1,7 @@
 <header>
-    <nav>
+    <nav data-aos="fade-up" data-aos-duration="1000">
         <div class="nav-logo">
-            <i class="fa-solid fa-bowl-food">DevSushi</i>
+            <a href="/"><i class="fa-solid fa-bowl-food">DevSushi</i></a>
         </div>
         <div class="nav-menu">
             <ul class="nav-list">
@@ -9,7 +9,7 @@
                     <a href="#about">O DEVSUSHI</a>
                 </li>
                 <li class="nav-link">
-                    <a href="#menu">CARDÁPIO</a>
+                    <a href="/cardapio">CARDÁPIO</a>
                 </li>
                 <li class="nav-link">
                     <a href="#">ALMOÇO</a>
@@ -30,7 +30,32 @@
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-whatsapp"></i>
         </div>
+        <button id="mobile_btn" (click)="toggleMenu()">
+          &#9776;
+        </button>
     </nav>
+    <div id="mobile_menu" [class.open]="isMenuOpen">
+      <ul class="mobile_nav_list">
+        <li class="nav_item">
+            <a href="#about">O DEVSUSHI</a>
+        </li>
+        <li class="nav_item">
+            <a href="/cardapio">CARDÁPIO</a>
+        </li>
+        <li class="nav_item">
+            <a href="#">ALMOÇO</a>
+        </li>
+        <li class="nav_item">
+            <a href="#">JANTAR</a>
+        </li>
+        <li class="nav_item">
+            <a href="#testimonials">DEPOIMENTOS</a>
+        </li>
+        <li class="nav_item">
+            <a href="#location">LOCALIZAÇÃO</a>
+        </li>
+    </ul>
+    </div>
     <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
