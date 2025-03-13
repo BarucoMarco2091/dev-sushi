@@ -30,6 +30,9 @@ export class CardapioComponent {
     { name: 'Rolinho primavera', description: 'Arroz temperado, enrolado em alga nori e recheado com salmão e vegetais', price: 90.00, image: '/rolinhoprimavera.webp' },
     { name: 'Arroz', description: 'Arroz temperado, enrolado em alga nori e recheado com salmão e vegetais', price: 100.00, image: '/friedrice.webp' },
     { name: 'Carne com brócolis', description: 'Arroz temperado, enrolado em alga nori e recheado com salmão e vegetais', price: 100.00, image: '/carnecombrocolis.webp' },
+    { name: 'Hosomaki', description: 'Arroz temperado, enrolado em alga nori e recheado com salmão e vegetais', price: 140.00, image: '/hosomaki.jpg' },
+    { name: 'Niguiri', description: 'Arroz temperado, enrolado em alga nori e recheado com salmão e vegetais', price: 150.00, image: '/niguiri.jpg' },
+    { name: 'Futomaki', description: 'Arroz temperado, enrolado em alga nori e recheado com salmão e vegetais', price: 100.00, image: '/futomaki.jpg' },
   ];
 
   cart: CardapioItem[] = [];
