@@ -29,10 +29,11 @@ export class CardapioComponent {
     { name: 'Yakisoba', description: 'Arroz temperado, enrolado em alga nori e recheado com salmão e vegetais', price: 140.00, image: '/yakisoba.webp' },
     { name: 'Rolinho primavera', description: 'Arroz temperado, enrolado em alga nori e recheado com salmão e vegetais', price: 90.00, image: '/rolinhoprimavera.webp' },
     { name: 'Arroz', description: 'Arroz temperado, enrolado em alga nori e recheado com salmão e vegetais', price: 100.00, image: '/friedrice.webp' },
-    { name: 'Carne com brócolis', description: 'Arroz temperado, enrolado em alga nori e recheado com salmão e vegetais', price: 100.00, image: '/carnecombrocolis.webp' },
+    { name: 'Carne com brócolis', description: 'Arroz temperado, enrolado em alga nori e recheado com salmão e vegetais', price: 105.00, image: '/carnecombrocolis.webp' },
     { name: 'Hosomaki', description: 'Arroz temperado, enrolado em alga nori e recheado com salmão e vegetais', price: 140.00, image: '/hosomaki.jpg' },
     { name: 'Niguiri', description: 'Arroz temperado, enrolado em alga nori e recheado com salmão e vegetais', price: 150.00, image: '/niguiri.jpg' },
-    { name: 'Futomaki', description: 'Arroz temperado, enrolado em alga nori e recheado com salmão e vegetais', price: 100.00, image: '/futomaki.jpg' },
+    { name: 'Futomaki', description: 'Arroz temperado, enrolado em alga nori e recheado com salmão e vegetais', price: 135.00, image: '/futomaki.jpg' },
+    { name: 'Missoshiro', description: 'Arroz temperado, enrolado em alga nori e recheado com salmão e vegetais', price: 85.00, image: '/missoshiro.jpg' },
   ];
 
   cart: CardapioItem[] = [];
