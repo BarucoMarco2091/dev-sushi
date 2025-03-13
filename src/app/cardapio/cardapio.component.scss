@@ -124,11 +124,11 @@
         border: 1px solid;
         background-color: $black;
         color: $white;
-        transition: opacity 1s;
+        transition: border 1s;
     }
 
     #cart-btn:hover {
-        opacity: 40%;
+        border: 2px solid $gold;
     }
 }
 

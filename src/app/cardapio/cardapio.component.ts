@@ -36,7 +36,7 @@ export class CardapioComponent {
   ];
 
   cart: CardapioItem[] = [];
-  isModalOpen = false;
+  isModalOpen = false
   address = '';
   showAddressWarning = false;
 
