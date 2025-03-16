@@ -34,6 +34,8 @@ export class CardapioComponent {
     { name: 'Niguiri', description: 'Arroz temperado, enrolado em alga nori e recheado com salmão e vegetais', price: 150.00, image: '/niguiri.jpg' },
     { name: 'Futomaki', description: 'Arroz temperado, enrolado em alga nori e recheado com salmão e vegetais', price: 135.00, image: '/futomaki.jpg' },
     { name: 'Missoshiro', description: 'Arroz temperado, enrolado em alga nori e recheado com salmão e vegetais', price: 85.00, image: '/missoshiro.jpg' },
+    { name: 'Arroz', description: 'Arroz temperado, enrolado em alga nori e recheado com salmão e vegetais', price: 80.00, image: '/arroz.jpg' },
+    { name: 'Temaki', description: 'Arroz temperado, enrolado em alga nori e recheado com salmão e vegetais', price: 11.00, image: '/temaki.jpg' },
   ];
 
   cart: CardapioItem[] = [];
